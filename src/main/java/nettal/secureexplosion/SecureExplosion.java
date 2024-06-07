@@ -39,7 +39,7 @@ public class SecureExplosion {
         }
         if (Config.InterceptALL.get() ||
                 (Config.InterceptExploder.get() && exploder != null) ||
-                (Config.InterceptSourceMob.get() && explosion.getSourceMob() != null)) {
+                (Config.InterceptSourceMob.get() && explosion.getIndirectSourceEntity() != null)) {
             event.getExplosion().clearToBlow();
         }
     }
